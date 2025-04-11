@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustrations Gallery</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Great Vibes'>  <!-- Font style -->
+    <style>
+        body{
+            background: rgb(1, 1, 36);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Theekshani Kalpana</a>
+
+        <nav class="navbar">
+            <a href="index.html#home" style="--i:1" class="active">Home</a>
+            <a href="index.html#about" style="--i:2">About</a>
+            <a href="index.html#skills" style="--i:4">Skills</a>
+            <a href="index.html#portfolio" style="--i:3">Portfolio</a>
+            <a href="index.html#contactme" style="--i:5">Contact</a>
+        </nav>
+       
+    </header>
+
+    <div class="title">
+        <h1>My Illustrations</h1>
+    </div>
+    <div class="full_img" id="full_img_box">
+        <img src="img/Cap Girl.jpg" alt="Cap Girl" id="full_img">
+        <span onclick="closeImage()">X</span>
+    </div>
+    
+       <div class="img_gallery">
+            <img src="img/Cap Girl.jpg" alt="Cap Girl" onclick="openImage(this.src)">
+            <img src="img/Kal.jpg" alt="Kal" onclick="openImage(this.src)">
+            <img src="img/Kasun Aiya.jpg" alt="Kasun" onclick="openImage(this.src)">
+            <img src="img/Lahiru Malli.jpg" alt="Lahiru" onclick="openImage(this.src)">
+            <img src="img/Lahiruni.jpg" alt="Lahiruni" onclick="openImage(this.src)">
+       </div>
+       
+    <!-- Open image and close image -->
+    <script>
+
+        var full_img_box = document.getElementById("full_img_box");
+        var full_img = document.getElementById("full_img");
+
+        function openImage(picture) {
+
+            full_img_box.style.display = "flex";
+            full_img.src= picture;
+        }
+
+        function closeImage() {
+
+            full_img_box.style.display = "none";
+        }
+    </script>
+</body>
+</html>

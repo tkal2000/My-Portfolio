@@ -9,3 +9,6 @@ var typed = new Typed('.typing_text', {
 
 
 
+
+
+

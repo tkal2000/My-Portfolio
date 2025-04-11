@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Designs</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Great Vibes'>  <!-- Font style -->
+    <style>
+        body{
+            background: rgb(1, 1, 36);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Theekshani Kalpana</a>
+
+        <nav class="navbar">
+            <a href="index.html#home" style="--i:1" class="active">Home</a>
+            <a href="index.html#about" style="--i:2">About</a>
+            <a href="index.html#skills" style="--i:4">Skills</a>
+            <a href="index.html#portfolio" style="--i:3">Portfolio</a>
+            <a href="index.html#contactme" style="--i:5">Contact</a>
+        </nav>
+       
+    </header>
+
+    <div class="title">
+        <h1>Logo Designs</h1>
+    </div>
+    <div class="full_img" id="full_img_box">
+        <img src="img/careerCove.jpg" alt="Cap Girl" id="full_img">
+        <span onclick="closeImage()">X</span>
+    </div>
+    
+       <div class="img_gallery">
+            <div class="img_card">
+                <img src="img/careerCove logo.jpg" alt="CareerCove logo" onclick="openImage(this.src)">
+                <p class="description">
+                    <strong>CareerCove – Online Job Portal Logo</strong><br>
+                    Designed using Adobe Illustrator, this logo represents CareerCove, an online job portal. 
+                    The magnifying glass element symbolizes job search and career focus, while the layered curves and vibrant green palette convey growth, opportunity, and a modern digital presence.
+                </p>
+            </div>
+                
+            <div class="img_card">
+                <img src="img/Food Logo Design.jpg" alt="Food Logo Design" onclick="openImage(this.src)">
+                <p class="description">
+                    <strong>Kepz – Food Ordering System Logo</strong><br>
+                    Crafted in Adobe Illustrator, the Kepz logo captures the essence of smart food ordering. 
+                    The chef hat, dish cover, fork, and spoon icons are creatively combined into a circular form, highlighting the theme “Keep Eat Perfect Easy.” 
+                    The black-and-white aesthetic emphasizes elegance and simplicity.
+                </p>
+            </div>
+       </div>
+       
+    <!-- Open image and close image -->
+    <script>
+
+        var full_img_box = document.getElementById("full_img_box");
+        var full_img = document.getElementById("full_img");
+
+        function openImage(picture) {
+
+            full_img_box.style.display = "flex";
+            full_img.src= picture;
+        }
+
+        function closeImage() {
+
+            full_img_box.style.display = "none";
+        }
+    </script>
+</body>
+</html>
